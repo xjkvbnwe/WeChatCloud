@@ -1,0 +1,1 @@
+"D:\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-7gi20naz142c2356 --n quickstartFunctions --r --project "D:\项目作品\其他项目\泰迪假期讲课项目\微信小程序公开课\WxProject" --report_first --report

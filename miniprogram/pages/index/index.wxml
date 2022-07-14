@@ -1,0 +1,46 @@
+<view class="input-panel">
+    <input class="input" placeholder="请输入书籍ISBN码" bindinput="isbn">
+    </input>
+    <view class="button-panel">
+        <view class="button" hover-class="button-hover" bindtap="check">查询
+        </view>
+    </view>
+</view>
+
+<view wx:if="{{flag == 1}}">
+    <view class="parilin">
+        <view class="panel1">
+            <view class="panel-info">
+                <image class="img1" src="{{img}}" style="border-radius: 5px;">
+                </image>
+                <view class="bookInfo">
+                    ISBN：{{isbn}}
+                </view>
+                <view class="bookInfo">
+                    书名：{{bookName}}
+                </view>
+                <view class="bookInfo">
+                    作者：{{bookAuthor}}
+                </view>
+                <view class="bookInfo">
+                    关键字：{{keyWords}}
+                </view>
+                <view class="book-Introduction">
+                    {{bookIntroduction}}
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="button-panel2">
+        <view class="button2" hover-class="button-hover" bindtap="addBook">添加
+        </view>
+    </view>
+</view>
+
+<view wx:if="{{flag==0}}" style="text-align: center;padding-top: 5%;"> 
+请输入书籍ISBN码进行查询
+</view>
+<view wx:if="{{flag==2}}" style="text-align: center;padding-top: 5%;"> 
+未查询到该书籍的信息！
+</view>

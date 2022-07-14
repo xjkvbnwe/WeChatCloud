@@ -1,0 +1,28 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/index/index"
+    ],
+    "window": {
+        "backgroundColor": "#FFFFFF",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#00CCFF",
+        "navigationBarTitleText": "云开发——实战开发",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#13227a",
+    "backgroundColor": "#ffffff",
+    "list": [{
+        "pagePath": "pages/home/home",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "获取"
+      }]
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
+}

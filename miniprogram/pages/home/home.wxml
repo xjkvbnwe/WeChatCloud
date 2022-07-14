@@ -1,0 +1,28 @@
+<view wx:for="{{bookList}}" wx:for-index="index" wx:key="*this">
+    <view class="parilin" bindtap="click" data-introductionFlag="{{index}}">
+        <view class="panel1">
+            <view class="panel-info">
+                <image class="img1" src="{{item.img}}" style="border-radius: 5px;">
+                </image>
+                <view class="bookInfo">
+                    ISBN：{{item.isbn}}
+                </view>
+                <view class="bookInfo">
+                    书名：{{item.bookName}}
+                </view>
+                <view wx:if="{{introductionFlag == index}}">
+                    <view class="bookInfo">
+                        作者：{{item.bookAuthor}}
+                    </view>
+                    <view class="bookInfo">
+                        关键字：{{item.keyWords}}
+                    </view>
+                </view>
+                <view class="book-Introduction">
+                    {{item.bookIntroduction}}
+                </view>
+
+            </view>
+        </view>
+    </view>
+</view>
